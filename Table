@@ -1,0 +1,70 @@
+-- Current Table
+getgenv().Paralyzed = {
+    Startup = {
+        AutoLowGFX = false, -- // auto turns on low gfx 
+        AutoMuteBoombox = true, -- // auto mutes boomboxes
+    },
+    Silent = {
+        SilentToggle = '', -- // target bind
+        Enabled = false, -- target toggle
+        AimPart = "HumanoidRootPart",
+        Prediction = 0.172,
+        ClosestPart = true, -- // Closest Part of body, makes it more legit
+        AutomatedPrediction = false, -- // Auto Predicts based on Ping
+        JumpOffset = -1.26,
+        FOV = {
+            Visible = false, -- // fov visible
+            Radius = 60, -- // fov radius
+        },
+    },
+    Target = {
+        TargetBind = 'C', -- // target bind
+        Enabled = true, -- target toggle
+        Notify = true, -- // notifies who ur locked onto
+        AimPart = "HumanoidRootPart",
+        Prediction = 0.13351,
+        AutomatedPrediction = false, -- // Auto Predicts based on Ping
+        JumpOffset = -1.26,
+        Visuals = {
+            Line = true, -- // Shows Line of prediction and aimpart
+        }
+        SyncWithCam = false, -- syncs the target with cam 
+    },
+    Camlock = {
+        CamlockBind = "C", -- // Camlock Bind
+        Enabled = false, -- // Camlock Toggle
+        AimPart = "HumanoidRootPart",
+        Prediction = 0.161,
+        ClosestPart = false, -- // Closest Part of body, makes it more legit
+        AutomatedPrediction = false, -- // Auto Predicts based on Ping
+        JumpOffset = -1.26,
+        Smoothing = {
+            Enabled = true, -- // Smoothness Toggle
+            Value = 0.2, -- // Smoothing Amount
+        },
+        Shake = {
+            Enabled = false, -- // Shake Toggle
+            X = 1, -- // X Axis
+            Y = 1, -- // Y Axis
+            Z = 1, -- // Z Axis
+        },
+    },
+    Extras = {
+        DeathChecks = {
+            Self = true, -- // Unlocks when ur dead or knocked
+            Victim = true, -- // Unlocks when target knocked or dead
+        },
+        Macro = {
+            Enabled = true, -- // Macro Toggle
+            Keybind = "", -- // Macro Bind
+            Speed = 0.01, -- // Macro Delay
+            Mode = "Hold", -- // Macro Mode: Toggle, Hold
+            Type = "Mouse", -- // Macro Type: Mouse,Keyboard
+        },
+        Resolver = {
+            Enabled = true, -- // Resolves All Velocity Antilocks
+            ResolveBind = 'V', -- // Resolver Bind
+        },
+        PredictionLabel = true, -- // Shows Predictions of target,silent and camlock
+    },
+}
